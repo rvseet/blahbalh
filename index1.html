@@ -1,0 +1,319 @@
+<!doctype html>
+<html class="h-100" lang="en">
+  
+  <!-- An HTML document always starts with a "head", i.e. information about the page that isn't directly visible -->
+  <head>
+	  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Links to the CSS styles from Bootstrap. -->
+    <!-- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- -->
+
+    <!-- Links to our additional CSS styles -->
+    <link rel="stylesheet" href="GitHub/cv/css/styles.css">
+
+    <title>Renske van Seeters Resumé</title>
+  </head>
+  <!-- End of the head -->
+
+  <!-- Start of the body, which contains everything visible on the page -->
+  <body class="d-flex flex-column h-100 justify-content-between">
+
+    <!--
+      We use a Bootstrap container to align contents.
+      The "container" class can be replaced by "container-fluid" to make a full width page.
+      The "my-sm-4" class adds a margin (m) vertical (y) at sizes small (-sm-) and above, of 4 x 6 pixels
+      The "resume-container" class doesn't come from Bootstrap, you can use it for your own styles
+    -->
+ 
+      <!--
+        <header> is a semantic element: it works exactly like <div>, but it gives information about the role of the code below.
+        The "row" class is used for the Bootstrap grid.
+      -->
+      <header class="row resume-header justify-content-center">
+        <!--
+          A container to wrap around the portrait and align it. We use Bootstrap grid columns.
+          This constrains the portrait to columns of decreasing sizes
+        -->
+        <div class="portrait-container col-5 col-sm-4 col-md-3 col-lg-2">
+          <!--
+            "w-100" makes sure the image takes the full width of the column it's in
+            "rounded-circle" cuts a circle around the image
+          -->
+          <img class="w-100 rounded-circle my-3" src="../Library/Mobile Documents/com~apple~CloudDocs/Downloads/cvfoto.jpg" alt="Portrait of Firstname Lastname" width="3215">
+        </div>
+        <!--
+          A container to wrap around your name and tagline. Full-width at small size, then columns of increasing size.
+        -->
+        <div class="col-12 col-sm-8 col-md-9 col-lg-10 my-3 header-content">
+          <h1 class="fw-bolder">Renske van Seeters</h1>
+          <h5 class="fst-italic tagline">A driven and enthusiastic second year Creative Business student at Breda Univerity of Applied Sciences.</h5>
+        </div>
+      </header>
+
+      <!--
+        Another row in the Bootstrap grid, for the rest of the résumé.
+        Biography and other details will be on top of each other at sizes XS and S, then next to each other.
+        Use the "flex-row-reverse" class here to swap the columns around.
+      -->
+
+        <!--
+          <main> is another semantic element. It will contain biographical info (professional experience and education).
+        -->
+	  <div class="row">
+	  <main class="col-md-7 col-lg-8 col-xl-9 resume-main">
+
+          <!--
+            <section> is yet another semantic element. The first one is for professional experience.
+          -->
+          <section class="my-3 biography-section">
+            <h2>Professional Experience</h2>
+            <!--
+              Each list item (li) in the unordered list (ul) below will be one job.
+              "list-unstyled" is a class that hides the bullet points of a list.
+            -->
+            <ul class="biography-list list-unstyled">
+
+              <!-- Top item (generally the latest or most relevant) in professional experience -->
+              <li class="biography-item row mb-2">
+                <!-- We're using a grid inside a grid so we can align logos and text -->
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="GitHub/cv/images/employers/images.png" alt="Company logo" width="225">
+                </div>
+                <div class="biography-contents col-9 col-sm-9 col-md-9 col-lg-10">
+                  <h4>Waitress &amp; Bartender,</h4>
+				  <h4>Boeien Drimmelen</h4>
+<h6>June 2023 - Now</h6>
+<ul class="biography-details list-unstyled">
+            <li>Customer Service &amp; Communication</li>
+                    <li>Time Management &amp; Multitasking</li>
+                    <li>Attention to Detail &amp; Organization</li>
+                    <li>Adaptability</li>
+					<li>Working within a team environment</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- 2nd item in professional experience -->
+              <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                <!-- We're using a grid inside a grid so we can align logos and text -->
+                  <img class="biography-logo mw-100 d-block mx-auto" src="GitHub/cv/images/employers/Albert_Heijn_Logo.svg.png" alt="Company logo" width="1200">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4>Supermarket Employee,&nbsp;</h4>
+                  <h4>Albert Heijn Made</h4>
+<h6>July 2021 - July 2022</h6>
+<ul class="biography-details list-unstyled">
+            <li>Customer Service &amp; Communication</li>
+                    <li>Time Management &amp; Multitasking</li>
+                    <li>Attention to Detail &amp; Organization</li>
+                    <li>Adaptability</li>
+				    <li>Working within a team environment</li>
+                  </ul>
+                </div>
+              </li>
+		    </ul>
+                  <!-- This entry doesn't have a list of achievements, but you can copy-paste the one from above -->
+          </section>
+
+          <!-- We're done with jobs, let's move on to schools -->
+
+          <section class="my-3 biography-section">
+            <h2>Education</h2>
+            <ul class="biography-list list-unstyled">
+
+              <!-- Top item in education. And by "top", I mean a Bachelor in Creative Business at BUas. -->
+              <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="GitHub/cv/images/schools/logo-buas.svg" alt="School logo" width="120">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4>BA in Creative Business, Breda University of Applied Sciences</h4>
+        
+<h5>September 2023 –&nbsp;now</h5>
+                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
+                  <ul class="biography-details list-unstyled">
+                    <li>Class representative 2023/2024</li>
+                    <li>Audio Visual productions</li>
+                    <li>Working in a team environment&nbsp; &nbsp; &nbsp;&nbsp;</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- 2nd item in education -->
+              <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="GitHub/cv/images/dongemond college logo.jpeg" alt="School logo" width="273">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4>High School Diploma, Dongemond College&nbsp;</h4>
+                  <h5>2018</h5>
+                  <ul class="biography-details list-unstyled">
+                    <li>HAVO</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- This is the end of the "Education" section -->
+
+        </main>
+
+        <!--
+          We're done with the first column.
+          We now move on to the column with contact details, languages and other skills
+          <aside> is also a semantic element.
+        -->
+       <aside class="col-md-5 col-lg-4 col-xl-3 resume-aside">
+
+  <!-- Contact Details -->
+  <section class="my-3 aside-section">
+    <h2>Contact</h2>
+    <ul class="contact-list list-unstyled">
+      <li class="contact-item">
+        <a class="d-flex align-items-center" target="_blank">
+          <img class="contact-icon" src="GitHub/cv/images/icons/phone.svg" alt="Mobile Phone">
+          06-58871260
+        </a>
+      </li>
+      <li class="contact-item">
+        <a class="d-flex align-items-center" href="mailto:email@buas.nl" target="_blank">
+          <img class="contact-icon" src="GitHub/cv/images/icons/envelope.svg" alt="Email">
+          234457@buas.nl
+        </a>
+      </li>	  
+      <li class="contact-item">
+        <a class="d-flex align-items-center" href="https://www.linkedin.com/in/renske-van-seeters-1813a12a2/" target="_blank">
+          <img class="contact-icon" src="GitHub/cv/images/icons/linkedin.svg" alt="LinkedIn"> 
+          Renske van Seeters
+        </a>
+      </li>		  
+      <li class="contact-item"> 
+        <a class="d-flex align-items-center" href="https://www.instagram.com/renskevanseeters/" target="_blank">
+          <img class="contact-icon" src="GitHub/cv/images/icons/instagram.svg" alt="Instagram"> 
+          Renske van Seeters
+        </a>
+      </li> 	
+    </ul> 
+  </section> <!-- End of Contact Section -->
+
+  <!-- Languages -->
+  <section class="my-3 aside-section">
+    <h2>Languages</h2>
+    <ul class="language-list list-unstyled">
+      <li class="language-item d-flex mb-1">
+        <h5 class="language-name w-50">Dutch</h5>
+        <div class="language-level w-50 border border-info border-2 position-relative">
+          <div class="language-progress position-absolute bg-custom h-100 w-100"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Native</h6>
+        </div>
+      </li>
+      <li class="language-item d-flex mb-1">
+        <h5 class="language-name w-50">English</h5>
+        <div class="language-level w-50 border border-info border-2 position-relative">
+          <div class="language-progress position-absolute bg-custom h-100 w-75"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Full proficiency</h6>
+        </div>
+      </li>
+	 <li class="language-item d-flex mb-1">
+        <h5 class="language-name w-50">Spanish</h5>
+        <div class="language-level w-50 border border-info border-2 position-relative">
+          <div class="language-progress position-absolute bg-custom h-100 w-25"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
+        </div>
+      </li>
+	 <li class="language-item d-flex mb-1">
+        <h5 class="language-name w-50">French</h5>
+        <div class="language-level w-50 border border-info border-2 position-relative">
+          <div class="language-progress position-absolute bg-custom h-100 w-25"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
+        </div>
+      </li>
+	 <li class="language-item d-flex mb-1">
+        <h5 class="language-name w-50">German</h5>
+        <div class="language-level w-50 border border-info border-2 position-relative">
+          <div class="language-progress position-absolute bg-custom h-100 w-25"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
+        </div>
+      </li>
+    </ul>
+  </section> <!-- End of Languages Section -->
+
+  <!-- Adobe Skills -->
+  <section class="my-3 aside-section">
+    <h2>Adobe</h2>
+    <ul class="adobe-list list-unstyled">
+      <li class="adobe-item d-flex mb-1">
+        <h5 class="adobe-name w-50">Illustrator</h5>
+        <div class="adobe-level w-50 border border-info border-2 position-relative">
+          <div class="adobe-progress position-absolute bg-custom h-100 w-75"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Full proficiency</h6>
+        </div>
+      </li>
+      <li class="adobe-item d-flex mb-1">
+        <h5 class="adobe-name w-50">Premiere pro</h5>
+        <div class="adobe-level w-50 border border-info border-2 position-relative">
+          <div class="adobe-progress position-absolute bg-custom h-100 w-50"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Intermediate</h6>
+        </div>
+      </li>
+	<li class="adobe-item d-flex mb-1">
+        <h5 class="adobe-name w-50">Photoshop</h5>
+        <div class="adobe-level w-50 border border-info border-2 position-relative">
+          <div class="adobe-progress position-absolute bg-custom h-100 w-25"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
+        </div>
+      </li>
+	<li class="adobe-item d-flex mb-1">
+        <h5 class="adobe-name w-50">Audition</h5>
+        <div class="adobe-level w-50 border border-info border-2 position-relative">
+          <div class="adobe-progress position-absolute bg-custom h-100 w-25"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
+        </div>
+      </li>
+	<li class="adobe-item d-flex mb-1">
+        <h5 class="adobe-name w-50">Dreamweaver</h5>
+        <div class="adobe-level w-50 border border-info border-2 position-relative">
+          <div class="adobe-progress position-absolute bg-custom h-100 w-25"></div>
+          <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
+        </div>
+      </li>
+    </ul>
+  </section> <!-- End of Adobe Section -->
+
+  <!-- Other Skills -->
+  <section class="my-3 aside-section">
+    <h2>Other Skills</h2>
+    <ul class="skill-list list-unstyled">
+      <li class="skill-item">Driven team Worker</li>
+      <li class="skill-item">Driving Licence</li>
+    </ul>
+  </section>
+
+  <!-- Interests & Hobbies -->
+  <section class="my-3 aside-section">
+    <h2>Interests &amp; Hobbies</h2>
+    <ul class="skill-list list-unstyled">
+      <li class="skill-item">Sports</li>
+      <li class="skill-item">Learning languages</li>
+      <li class="skill-item">Creating content</li>
+    </ul>
+  </section>
+
+</aside> <!-- End of Aside Section -->
+  </div>
+    <!-- And now, a footer! -->
+ <footer class="bg-dark mt-sm-5 py-4 text-light">
+  <p class="container text-end">
+    Created as part of the <a href="https://www.buas.nl/en/programmes/creative-business" target="_blank">
+      Bachelor of Creative Business at Breda University of Applied Sciences</a>.
+  </p>
+</footer>
+
+</body>
+</html>			  

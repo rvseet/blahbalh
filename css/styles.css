@@ -2,19 +2,45 @@
 
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /* Styles for the body */
 
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #202030;
-	background-color: #f8f8fc;
+
+}
+
+h1 { 
+font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 { 
+ font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4 { 
+ font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h5 { 
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #2f3918; 
 }
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
 .resume-header {
-    background-color: #e0f0ff;
+    background-color: #a4b792;
 }
 
 .resume-main {
@@ -22,7 +48,7 @@ body {
 }
 
 .resume-aside {
-	background-color: #fff0e0;
+	background-color: #c8dbb7;
 }
 
 /* Styles for lists in the document */
@@ -36,11 +62,12 @@ body {
 }
 
 .biography-details li::before {
-	color: #EE7623;
+	color: #a4b792;
 }
 
 .biography-details li, .skill-list li {
 	padding-left: 1em;
+	
 }
 
 /* Styles for contact icons */
@@ -48,4 +75,24 @@ body {
 .contact-icon {
 	height: 1em;
 	flex-basis: 1.4em;
+	
+}
+.bg-custom {
+    background-color: #a4b792 !important;
+}.language-level {
+    border: 2px solid #a4b792 !important;
+}
+
+.language-progress {
+    border: 2px solid #a4b792 !important;
+}
+
+.bg-custom {
+    background-color: #a4b792 !important;
+}.adobe-level {
+    border: 2px solid #a4b792 !important;
+}
+
+.language-progress {
+    border: 2px solid #a4b792 !important;
 }
